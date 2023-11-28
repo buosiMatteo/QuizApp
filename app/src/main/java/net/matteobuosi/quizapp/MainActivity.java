@@ -63,14 +63,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @SuppressLint("NonConstantResourceId")
     public void clickButton(View v) {
         int id = v.getId();
         Button b = findViewById(id);
         isSelected = true;
         stateButton(false, mAnswer1, mAnswer2, mAnswer3, mAnswer4);
         switch (id) {
-            case R.id.answer1:
+            case (R.id.answer1):
                 num = 1;
                 break;
             case R.id.answer2:
